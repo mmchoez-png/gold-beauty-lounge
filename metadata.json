@@ -1,0 +1,6 @@
+{
+  "name": "Gold Beauty Lounge",
+  "description": "Luxury mobile UI/UX prototype for a premium beauty salon, featuring elegant minimalist design and gold accents.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

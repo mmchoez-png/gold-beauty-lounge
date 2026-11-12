@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Plus Jakarta Sans", sans-serif;
+  --font-body: "Plus Jakarta Sans", sans-serif;
+  
+  --color-cream: #FFFDF9;
+  --color-charcoal: #2C221E;
+  --color-bronze: #7A5C1E;
+  --color-gold: #E6C687;
+  
+  /* Semantic Aliases */
+  --color-nude: var(--color-cream);
+  --color-luxury-dark: var(--color-charcoal);
+  --color-gold-light: var(--color-gold);
+}
+
+@layer base {
+  body {
+    @apply font-body bg-cream text-charcoal antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #E6C687 0%, #F5E6CA 50%, #C5A059 100%);
+}
+
+.gold-text-gradient {
+  background: linear-gradient(135deg, #7A5C1E 0%, #C5A059 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
