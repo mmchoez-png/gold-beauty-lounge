@@ -1,7 +1,6 @@
 import manicureImg from '../../assets/images/hidratacion_manos.png';
 import stylingImg from '../../assets/images/promo_styling_luxury_1794274844217.jpg';
 import facialImg from '../../assets/images/promo_aesthetic_luxury_1794274844162.jpg';
-import massageImg from '../../assets/images/promo_spa_luxury_1794274844108.jpg';
 import { motion, AnimatePresence } from 'motion/react';
 import { 
   X, User, Calendar, Clock, Coffee, 
@@ -23,7 +22,6 @@ const services = [
   { id: 'manicure', label: 'Manicure Luxury', duration: '60 min', price: 45, img: manicureImg },
   { id: 'hair', label: 'Estilismo Premium', duration: '90 min', price: 85, img: stylingImg },
   { id: 'facial', label: 'Tratamiento Facial', duration: '45 min', price: 65, img: facialImg },
-  { id: 'massage', label: 'Masaje Relajante', duration: '60 min', price: 75, img: massageImg },
 ];
 
 const specialists = [
