@@ -1,4 +1,8 @@
 import { AppState } from '../types';
+import tinturadoImg from '../assets/images/tinturado.png';
+import serumCapilarImg from '../assets/images/serum_capilar.png';
+import hidratacionManosImg from '../assets/images/hidratacion_manos.png';
+import cremaFacialImg from '../assets/images/crema_facial.png';
 
 export const INITIAL_STATE: AppState = {
   balance: 1240.50,
@@ -47,8 +51,8 @@ export const INITIAL_STATE: AppState = {
       id: 'd1',
       service: 'Manicure Luxury',
       date: '2026-10-15',
-      beforeImg: 'https://images.unsplash.com/photo-1632345031435-8727f6897d53?q=80&w=400&auto=format&fit=crop',
-      afterImg: 'https://images.unsplash.com/photo-1604654894610-df490c91550a?q=80&w=400&auto=format&fit=crop',
+      beforeImg: hidratacionManosImg,
+      afterImg: hidratacionManosImg,
       formula: 'Base Coat + 2 capas Nude Gold + Top'
     }
   ],
@@ -62,27 +66,27 @@ export const PRODUCTS = [
     name: 'Shampoo Sin Sulfatos', 
     price: 35.00, 
     description: 'Cuidado profesional para cabello tinturado.', 
-    image: 'https://images.unsplash.com/photo-1584949091598-c31daaaa4aa9?q=80&w=400&auto=format&fit=crop' 
+    image: tinturadoImg
   },
   { 
     id: 'p2', 
     name: 'Sérum Capilar Oro', 
     price: 45.00, 
     description: 'Brillo instantáneo y nutrición profunda.', 
-    image: 'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=400&auto=format&fit=crop' 
+    image: serumCapilarImg
   },
   { 
     id: 'p3', 
     name: 'Aceite de Cutículas', 
     price: 18.00, 
     description: 'Hidratación intensa para tus uñas.', 
-    image: 'https://images.unsplash.com/photo-1607006342411-912f1db564d6?q=80&w=400&auto=format&fit=crop' 
+    image: hidratacionManosImg
   },
   { 
     id: 'p4', 
     name: 'Crema Facial Noche', 
     price: 65.00, 
     description: 'Regeneración celular nocturna.', 
-    image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?q=80&w=400&auto=format&fit=crop' 
+    image: cremaFacialImg
   },
 ];

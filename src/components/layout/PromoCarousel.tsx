@@ -1,3 +1,7 @@
+import manicurePromoImg from '../../assets/images/hidratacion_manos.png';
+import stylingPromoImg from '../../assets/images/promo_styling_luxury_1794274844217.jpg';
+import facialPromoImg from '../../assets/images/promo_aesthetic_luxury_1794274844162.jpg';
+import spaFallbackImg from '../../assets/images/promo_spa_luxury_1794274844108.jpg';
 import { motion } from 'motion/react';
 import { Card, Badge } from '@/src/components/ui';
 import { ChevronRight, ChevronLeft } from 'lucide-react';
@@ -5,12 +9,12 @@ import { useRef, useState, useEffect } from 'react';
 import { cn } from '@/src/lib/utils';
 
 const promos = [
-  { id: 1, title: 'Manicure Luxury', discount: '25% OFF', tag: 'Uñas Impecables', img: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=800&q=80' },
-  { id: 2, title: 'Estilismo Premium', discount: '15% OFF', tag: 'Look Renovado', img: 'https://images.unsplash.com/photo-1560869713-7d0a29430803?q=80&w=400&auto=format&fit=crop' },
-  { id: 3, title: 'Tratamiento Facial', discount: '10% OFF', tag: 'Piel Radiante', img: 'https://images.unsplash.com/photo-1570172619997-752145b6ef5c?q=80&w=400&auto=format&fit=crop' },
+  { id: 1, title: 'Manicure Luxury', discount: '25% OFF', tag: 'Uñas Impecables', img: manicurePromoImg },
+  { id: 2, title: 'Estilismo Premium', discount: '15% OFF', tag: 'Look Renovado', img: stylingPromoImg },
+  { id: 3, title: 'Tratamiento Facial', discount: '10% OFF', tag: 'Piel Radiante', img: facialPromoImg },
 ];
 
-const FALLBACK_IMAGE = "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=800&q=80";
+const FALLBACK_IMAGE = spaFallbackImg;
 
 interface PromoCarouselProps {
   onPromoClick: (promo: any) => void;

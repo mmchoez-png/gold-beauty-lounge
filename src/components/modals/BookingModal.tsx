@@ -1,3 +1,7 @@
+import manicureImg from '../../assets/images/hidratacion_manos.png';
+import stylingImg from '../../assets/images/promo_styling_luxury_1794274844217.jpg';
+import facialImg from '../../assets/images/promo_aesthetic_luxury_1794274844162.jpg';
+import massageImg from '../../assets/images/promo_spa_luxury_1794274844108.jpg';
 import { motion, AnimatePresence } from 'motion/react';
 import { 
   X, User, Calendar, Clock, Coffee, 
@@ -16,10 +20,10 @@ interface BookingModalProps {
 }
 
 const services = [
-  { id: 'manicure', label: 'Manicure Luxury', duration: '60 min', price: 45, img: 'https://images.unsplash.com/photo-1604654894610-df490c91550a?q=80&w=200&auto=format&fit=crop' },
-  { id: 'hair', label: 'Estilismo Premium', duration: '90 min', price: 85, img: 'https://images.unsplash.com/photo-1560869713-7d0a29430803?q=80&w=200&auto=format&fit=crop' },
-  { id: 'facial', label: 'Tratamiento Facial', duration: '45 min', price: 65, img: 'https://images.unsplash.com/photo-1570172619997-752145b6ef5c?q=80&w=200&auto=format&fit=crop' },
-  { id: 'massage', label: 'Masaje Relajante', duration: '60 min', price: 75, img: 'https://images.unsplash.com/photo-1544161515-436cefb501f8?q=80&w=200&auto=format&fit=crop' },
+  { id: 'manicure', label: 'Manicure Luxury', duration: '60 min', price: 45, img: manicureImg },
+  { id: 'hair', label: 'Estilismo Premium', duration: '90 min', price: 85, img: stylingImg },
+  { id: 'facial', label: 'Tratamiento Facial', duration: '45 min', price: 65, img: facialImg },
+  { id: 'massage', label: 'Masaje Relajante', duration: '60 min', price: 75, img: massageImg },
 ];
 
 const specialists = [
